@@ -55,35 +55,35 @@ class HomeView: UIView {
         return stackView
     }()
     
-    private lazy var categoryIcon1: UIImageView = {
+    private lazy var firstCategoryIcon: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "HeroIcon"))
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    private lazy var categoryIcon2: UIImageView = {
+    private lazy var secondCategoryIcon: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "VillainsIcon"))
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    private lazy var categoryIcon3: UIImageView = {
+    private lazy var thirdCategoryIcon: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "AntiHeroIcon"))
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    private lazy var categoryIcon4: UIImageView = {
+    private lazy var fourthCategoryIcon: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "AlienIcon"))
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    private lazy var categoryIcon5: UIImageView = {
+    private lazy var fifthCategoryIcon: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "HumanIcon"))
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -145,11 +145,11 @@ class HomeView: UIView {
         
         logoImageView.contentMode = .scaleAspectFit
         
-        categoryStackView.addArrangedSubview(categoryIcon1)
-        categoryStackView.addArrangedSubview(categoryIcon2)
-        categoryStackView.addArrangedSubview(categoryIcon3)
-        categoryStackView.addArrangedSubview(categoryIcon4)
-        categoryStackView.addArrangedSubview(categoryIcon5)
+        categoryStackView.addArrangedSubview(firstCategoryIcon)
+        categoryStackView.addArrangedSubview(secondCategoryIcon)
+        categoryStackView.addArrangedSubview(thirdCategoryIcon)
+        categoryStackView.addArrangedSubview(fourthCategoryIcon)
+        categoryStackView.addArrangedSubview(fifthCategoryIcon)
         
         addSubview(scrollView)
         scrollView.addSubview(contentView)
